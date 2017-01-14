@@ -23,6 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qa1l=(*r=qd*h14(*p09&+z&jlzft@z0)@g%nhz+07q5c+&=3c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#
+# python manage.py createsuperuser
+# username admin
+#@email  kassadube@outlook.com
+# password 1qazxsw2
+#
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -31,6 +37,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
